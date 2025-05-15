@@ -61,21 +61,48 @@ The application uses a SQLite database with the following tables:
 ## Installation and Setup
 
 1. **Prerequisites**
-   - Python 3.x
+   - Python 3.x: https://www.python.org/downloads/
    - pip package manager
    - CS50 library
+   - Git (for cloning the repo)
 
-2. **Installation**
+2. **Clone the repository**
+   Open your terminal and run:
+   ```bash
+   git clone https://github.com/SBoutine/Stock-Portfolio-Tracker.git
+   cd Stock-Portfolio-Tracker
+
+3. **Create a virtual environment**
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate
+
+4. **Install the dependencies**
    ```bash
    pip install -r requirements.txt
+   pip install Flask cs50 Flask-Session requests
 
-3. **Running the Application**
+
+5. **Set Flask environment variables**
+   On macOS/Linux:
+   ```bash
+   export FLASK_APP=app.py
+   export FLASK_ENV=development
+
+   On Windows:
+   ```bash
+   set FLASK_APP=app.py
+   set FLASK_ENV=development
+
+7. **Access the Application**
    ```bash
    flask run
-5. **Access the Application**
+   
    Open a web browser and navigate to:
    ```bash
    http://localhost:5000
+
+   (can be something else)
 
 ## Usage
 1. **Registration**
