@@ -70,12 +70,14 @@ The application uses a SQLite database with the following tables:
    pip install -r requirements.txt
 
 3. **Running the Application**
+   ```bash
    flask run
-4. **Access the Application**
+5. **Access the Application**
    Open a web browser and navigate to:
+   ```bash
    http://localhost:5000
 
-##Usage
+## Usage
 1. **Registration**
    - Create a new account with username and password
    - Initial cash balance provided
